@@ -10,7 +10,7 @@ $Ans2=abs($Ans2);
 echo $Ans1.",".$Ans2;
 $Fre=0;
 do{
-    for($j=0;$j<10;$j++){
+    for($j=0;$j<=10;$j++){
         $Fre=$Fre+1;
         for($i=0;$i<3;$i++){
             $RandNum[$i] = rand(0,9);
@@ -25,6 +25,7 @@ do{
     echo $Ans1.",".$Ans2."</p>";
         break;
     };
-}while($Ans1 !== $Ans2);
+}while($Ans1 !== $Ans2 && $Fre<=9);
 print  "超過10次或已經找到數字了喔~";
+
 ?>
